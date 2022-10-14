@@ -8,7 +8,7 @@ NoneType = type(None)
 
 # Ouvrir le fichier
 # Préciser le chemin du fichier source
-xlsx_file = Path('/home/houssam/Bureau/data.xlsx')
+xlsx_file = Path('/path/to/file/data.xlsx')
 
 # tester si le fichier est bien ouvert en affichant son chemin
 print(xlsx_file)
@@ -19,7 +19,7 @@ wb_obj = openpyxl.load_workbook(xlsx_file)
 sheet = wb_obj.active
 
 # préciser ou le fichier .csv va etre créé, chemin + nom, a ne pas toucher le w = mode ecriture (stands for write)
-file = open('/home/houssam/Bureau/reults.csv', 'w')
+file = open('/path/to/file/reults.csv', 'w')
 writer = csv.writer(file)
 
 
